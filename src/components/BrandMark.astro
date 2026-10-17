@@ -1,0 +1,12 @@
+---
+interface Props {
+  footer?: boolean;
+}
+
+const { footer = false } = Astro.props;
+---
+
+<a class:list={['wordmark', footer && 'footer-wordmark']} href="#top" aria-label="Orivelle home">
+  <span class="wordmark-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
+  <span>orivelle</span>
+</a>

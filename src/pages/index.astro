@@ -1,0 +1,23 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ApproachSection from '../components/ApproachSection.astro';
+import CollectionSection from '../components/CollectionSection.astro';
+import ClosingSection from '../components/ClosingSection.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+
+<SiteLayout>
+  <div class="site-shell">
+    <SiteHeader />
+    <main id="top">
+      <HeroSection />
+      <ApproachSection />
+      <CollectionSection />
+      <ClosingSection />
+    </main>
+    <SiteFooter />
+  </div>
+  <script>import '../scripts/motion';</script>
+</SiteLayout>

@@ -1,0 +1,21 @@
+---
+import BrandMark from './BrandMark.astro';
+---
+
+<header class="site-header">
+  <BrandMark />
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="#approach">Approach</a>
+    <a href="#collection">Collection</a>
+    <a href="#footer">About</a>
+  </nav>
+  <a class="header-link" href="#collection">Discover the apps <span aria-hidden="true">↗</span></a>
+  <details class="mobile-menu">
+    <summary aria-label="Open navigation"><span></span><span></span></summary>
+    <nav aria-label="Mobile navigation">
+      <a href="#approach">Approach</a>
+      <a href="#collection">Collection</a>
+      <a href="#footer">About</a>
+    </nav>
+  </details>
+</header>

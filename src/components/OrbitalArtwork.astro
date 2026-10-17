@@ -1,0 +1,18 @@
+---
+const signals = Array.from({ length: 16 }, (_, index) => index);
+---
+
+<div class="hero-art" role="img" aria-label="An orbital illustration representing the Orivelle software collection">
+  <div class="art-grid" aria-hidden="true"></div>
+  <div class="art-glow" aria-hidden="true"></div>
+  <div class="orbit orbit-one" aria-hidden="true"><span class="orbit-satellite satellite-one"></span></div>
+  <div class="orbit orbit-two" aria-hidden="true"><span class="orbit-satellite satellite-two"></span></div>
+  <div class="orbit orbit-three" aria-hidden="true"><span class="orbit-satellite satellite-three"></span></div>
+  <div class="core-mark" aria-hidden="true"><span class="core-ring"></span><span class="core-orbit"></span><span class="core-star">o</span></div>
+  <div class="art-label art-label-top"><span>ORIVELLE / SOFTWARE</span><span>EDITION 001</span></div>
+  <div class="art-label art-label-bottom"><span>TOOLS FOR THE FLOW</span><span>CATALOG / 001</span></div>
+  {signals.map((signal) => <span class="signal" style={`--signal-index:${signal}`} aria-hidden="true"></span>)}
+  <span class="art-cross cross-one" aria-hidden="true">+</span>
+  <span class="art-cross cross-two" aria-hidden="true">+</span>
+  <span class="art-coordinate" aria-hidden="true">FIG. 001</span>
+</div>
